@@ -16,7 +16,10 @@ public class chatService {
 
     public chatModel addRequest(chatModel request) {
 
+        String response = "hi from gemeni";
+        request.setResponse(response);
         return this.chatRepository.save(request);
+
     }
 
 }
